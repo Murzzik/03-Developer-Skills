@@ -26,18 +26,18 @@ const calcTempAmplitude = function (temps) {
     let max = temps[0];
     let min = temps[0];
 
-    for(let i = 0; i < temps.length; i++) {
+    for (let i = 0; i < temps.length; i++) {
         const curTemp = temps[i]
-        if(typeof curTemp !== 'number') continue;
-        if(curTemp > max) max = curTemp;
-        if(curTemp < min) min = curTemp;
+        if (typeof curTemp !== 'number') continue;
+        if (curTemp > max) max = curTemp;
+        if (curTemp < min) min = curTemp;
     }
     console.log(max, min);
     return max - min;
 }
 const amplitude = calcTempAmplitude(temperatures)
 console.log(amplitude)
-calcTempAmplitude([3,7,4,1,5,8])
+calcTempAmplitude([3, 7, 4, 1, 5, 8])
 
 // PROBLEM 2:
 // function should now receive 2 arrays of temp
